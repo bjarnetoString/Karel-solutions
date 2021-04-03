@@ -1,0 +1,18 @@
+void hangTheLampions() {
+    while (onBeeper()) {
+        turnLeft();
+        pickBeeper();
+        while (frontIsClear()) {
+            moveForward();
+        }
+        dropBeeper();
+        turnAround();
+        while (frontIsClear()) {
+            moveForward();
+        }
+        turnLeft();
+        if (frontIsClear()) {
+            moveForward();   
+        }
+    }
+}
