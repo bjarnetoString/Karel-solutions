@@ -1,0 +1,24 @@
+void harvestTheField() {
+    repeat (2) {
+        pick2();
+        repeat (2) {
+            moveForward();
+            moveForward();
+            turnLeft();
+        }
+        pick2();
+        turnAround();
+    }
+}
+
+
+
+void pick2() {
+    repeat (4) {
+        moveForward();
+        pickBeeper();
+        turnRight();
+        moveForward();
+        turnLeft();
+    }
+}
